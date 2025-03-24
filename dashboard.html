@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthcare Dashboard</title>
-    <style>
-        body { text-align: center; font-family: Arial, sans-serif; margin-top: 50px; }
-    </style>
+    <title>TrojanHex - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Your Healthcare Dashboard</h1>
-    <p>You have successfully logged in.</p>
+    <!-- Header Section -->
+    <div class="header">
+        <h1 class="logo">TrojanHex</h1>
+        <h3 class="tagline">Your one-stop solution for perfect health</h3>
+    </div>
+
+    <!-- Main Content -->
+    <div class="dashboard-container">
+        <div class="booking-box" onclick="redirectToBooking()">
+            <div class="ambulance-icon">🚑</div>
+            <p>Book an Ambulance</p>
+        </div>
+    </div>
+
+    <script>
+        function redirectToBooking() {
+            window.location.href = "ambulance.html";
+        }
+    </script>
 </body>
 </html>

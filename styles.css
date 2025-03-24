@@ -1,0 +1,79 @@
+/* Reset Default Margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Ensure Body is Displayed Properly */
+body {
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Positioned at Top Left */
+.header {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    text-align: left;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Booking Box */
+.booking-box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: white;
+    transition: 0.3s;
+}
+
+.booking-box:hover {
+    background: lightgray;
+}
+
+.ambulance-icon {
+    font-size: 50px;
+}
+
+/* Phone Number Input */
+input[type="tel"] {
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
